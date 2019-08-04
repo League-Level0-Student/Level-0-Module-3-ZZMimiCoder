@@ -1,6 +1,6 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
-package _99_extra;
+package Extra;
 
 import javax.swing.JOptionPane;
 

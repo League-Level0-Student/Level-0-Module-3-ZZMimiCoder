@@ -1,7 +1,7 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-package _08_shiny_objects;
+package ShinyObjects;
 
 import java.applet.AudioClip;
 

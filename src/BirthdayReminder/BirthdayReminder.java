@@ -2,7 +2,7 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-package _06_birthday_reminder;
+package BirthdayReminder;
 
 import javax.swing.JOptionPane;
 

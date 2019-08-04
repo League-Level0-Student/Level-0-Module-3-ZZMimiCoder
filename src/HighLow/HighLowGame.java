@@ -1,7 +1,7 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-package _03_high_low;
+package HighLow;
 
 import java.util.Random;
 

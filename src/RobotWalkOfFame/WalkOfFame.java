@@ -2,7 +2,7 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-package _09_robot_walk_of_fame;
+package RobotWalkOfFame;
 
 import org.jointheleague.graphical.robot.Robot;
 

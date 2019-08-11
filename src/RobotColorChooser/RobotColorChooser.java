@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 import java.awt.Color;
 public class RobotColorChooser {
-	public static void main(String[] args) {
+	public static void main(String[] Args) {
 		Robot Darren = new Robot();
 		while (true) {
 			String PenColor = JOptionPane.showInputDialog("What Color?");

@@ -1,32 +1,25 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
 package CrazyCatLady;
-
 import java.net.URI;
-
+import javax.swing.JOptionPane;
 public class CrazyCatLady {
-	public static void main(String[] args) {
-		// 1. Ask the user how many cats they have
-
-		// 2. Convert their answer into an int
-
-		// 3. If they have 3 or more cats, tell them they are a crazy cat lady
-
-		// 4. If they have less than 3 cats AND more than 0 cats, call the method below to show them a cat video
-
-		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
-		
+	public static void main(String[] Args) {
+		int Number = Integer.parseInt(JOptionPane.showInputDialog("How Many Cats Do You Have?"));
+		if (Number > 2) {
+			System.out.println("You're A Crazy Cat Lady");
+		}
+		else if (Number < 3 && Number > 0) {
+			PlayVideo("https://www.youtube.com/watch?v=fJbhvdDEiNU");
+		}
+		else {
+			PlayVideo("https://www.youtube.com/watch?v=umAyl9q9Gwg");
+		}	
 	}
-
-	static void playVideo(String videoURL) {
+	static void PlayVideo(String VideoURL) {
 		try {
-			URI uri = new URI(videoURL);
-			java.awt.Desktop.getDesktop().browse(uri);
-		} catch (Exception e) {
-			e.printStackTrace();
+			URI Uri = new URI(VideoURL);
+			java.awt.Desktop.getDesktop().browse(Uri);
+		} catch (Exception Ex) {
+			Ex.printStackTrace();
 		}
 	}
-
 }
-

@@ -5,7 +5,7 @@ import javax.sound.sampled.Clip;
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 public class ShinyObjects {
-	public static void main(String[] args) {
+	public static void main(String[] Args) {
 		int Times = Integer.parseInt(JOptionPane.showInputDialog("How Many Shiny Objects?"));
 		for (int X = 0; X < Times; X++) {
 			PlaySound();

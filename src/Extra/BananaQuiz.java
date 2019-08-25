@@ -1,25 +1,17 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
 package Extra;
-
 import javax.swing.JOptionPane;
-
-public class BananaQuiz
-{
-	
-	public static void main(String[] args)
-	{
-		//1. ask the user if they like bananas
-		//2. if they say no, 
-			//tell them they are crazy 
-			//and end quiz
-		//3. if they say yes
-		//	ask them what is their favorite hobby
-		//	show a pop up that says "<your hobby> is much better with bananas!"
-
-		//4. OPTIONAL: if they say something other than “yes�? or “no�?
-		//	show a pop up that says “You are bananas!�?
-	
+public class BananaQuiz {
+	public static void main(String[] Args) {
+		String Answer = JOptionPane.showInputDialog("∂ø Áø¨ Òˆ˚´ ıå˜å˜åß¿");
+		if (Answer.equals("˜ø")) {
+			JOptionPane.showMessageDialog(null, "Áø¨ Å®´ Ç®åΩ¥⁄");
+		}
+		else if (Answer.equals("Á´ß")) {
+			Answer = JOptionPane.showInputDialog("„˙å† ˆß Áø¨® Ïå√ø®ˆ†´ ˙ø∫∫¥¿");
+			JOptionPane.showMessageDialog(null, Answer + " ˆß Â¨ç˙ ı´††´® „ˆ†˙ ıå˜å˜åß⁄");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Áø¨® Å®´ ıå˜å˜åß⁄");
+		}
 	}
-
 }

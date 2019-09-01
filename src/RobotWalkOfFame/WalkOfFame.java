@@ -17,5 +17,4 @@ public class WalkOfFame {
 			Bobby.move(50);
 		}
 	}
-
 }

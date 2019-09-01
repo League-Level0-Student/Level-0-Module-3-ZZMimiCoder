@@ -1,31 +1,22 @@
-
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
 package BirthdayReminder;
-
 import javax.swing.JOptionPane;
-
 public class BirthdayReminder {
-
 	public static void main(String[] args) {
-	
-		// 1. correct the birthdays for your family below
-		String MyBirthday = "June 7th";
-		String MyFriendsBirthday = "December 1st";
-		String MyTeachersBirthday = "March 12th";
-		
-		// 2. Find out which 
-
-		// 3. Print out what the user typed
-		
-		// 4. if user asked for "mom"
-			//print mom's birthday
-		// 5. if user asked for "dad"
-			// print dad's birthday
-		// 6. if user asked for your name
-			// print myBirthday
-		//7. otherwise print "Sorry, i don't remember that person's birthday!"
-
-	} 
+		String MyBirthday = "Ô¨˜´ ¶†˙";
+		String MyFriendsBirthday = "Î´ç´µ∫´® ¢†˙";
+		String MyTeachersBirthday = "Âå®ç˙ ¡™†˙";
+		String Answer = JOptionPane.showInputDialog("„˙øß´ ıˆ®†˙∂å¥¿");
+		if (Answer.equals("Â´˙")) {
+			JOptionPane.showMessageDialog(null, MyBirthday);
+		}
+		else if (Answer.equals("Ï®ˆ´˜∂")) {
+			JOptionPane.showMessageDialog(null, MyFriendsBirthday);
+		}
+		else if (Answer.equals("ˇ´åç˙´®")) {
+			JOptionPane.showMessageDialog(null, MyTeachersBirthday);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "ˆ Îø˜æ† ‰´µ´µ∫´® ˇ˙å† ∏´®ßø˜æß ıˆ®†˙∂å¥≥");
+		}
+	}
 }

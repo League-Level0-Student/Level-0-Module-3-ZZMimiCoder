@@ -4,13 +4,15 @@ void setup() {
   size(200, 200);
 }
 void draw() {
-  ellipse(100, 100, S, S);
-  if (X % 2 == 0) {
-  fill(0, 0, 0);
+  while (S > 0) { 
+    ellipse(100, 100, S, S);
+    if (X % 2 == 0) {
+      fill(0, 0, 0);
+    }
+    else {
+      fill(255, 0, 0);
+    }
+    S -= 5;
+    X += 1;
   }
-  else {
-  fill(255, 0, 0);
-  }
-  S -= 5;
-  X += 1;
 }

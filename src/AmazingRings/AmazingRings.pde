@@ -1,38 +1,28 @@
-float R = 0.1;
-boolean Plus, Minus = false;
+int X = 0;
+int S = 100;
+int M = 0;
+int Z = 0;
 void setup() {
-  size(800,500);
-  smooth(8);
+  size(1000, 500);
 }
-void draw() {
-  background(200);
-  for (int I = 300; I > 0; I = I - 10) {
-    pushMatrix();
-    translate(width / 4, height / 4);
+void MakeBullseye(int X, int Y) {
+  int S = 100;
+  while (S > 0) {
     noFill();
-    strokeWeight(2);
-    ellipse(R, 100, I, I);
-    popMatrix();
+    ellipse(X, Y, S, S);
+    S -= 10;
   }
-  for (int J = 300; J > 0; J = J - 10) {
-    pushMatrix();
-    translate(width / 4, height / 4);
-    noFill();
-    ellipse(350 - R, 100, J, J);
-    popMatrix();
-  }
-  if (R < 5) {
-    Plus = true;
-    Minus = false;
-  }
-  if (R > 450) {
-    Plus = false;
-    Minus = true;
-  }
-  if (Plus) {
-    R = R + 0.2;
-  }
-  if (Minus) {
-    R = R - 0.1;
-  }
+}
+
+while (Z < 800) {
+  background(100, 100, 100);
+  MakeBullseye(100 + Z, 250);
+  MakeBullseye(900 - Z, 250);
+  Z++;
+}
+while (Z > 0) {
+  background(100, 100, 100);
+  MakeBullseye(100 + Z, 250);
+  MakeBullseye(900 - Z, 250);
+  Z--;
 }
